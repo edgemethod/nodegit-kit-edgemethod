@@ -1,0 +1,39 @@
+{
+  "name": "nodegit-kit-edgemethod",
+  "description": "Complementary NodeGit helpers returning native Promises, helps with git commands such as init, add, commit, status, diff",
+  "version": "0.13.0",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thisconnect/nodegit-kit.git"
+  },
+  "keywords": [
+    "promise",
+    "commit",
+    "log",
+    "status",
+    "diff",
+    "repo",
+    "repository",
+    "libgit2",
+    "nodegit",
+    "git"
+  ],
+  "scripts": {
+    "test": "ava --verbose ./test/test-*.js",
+    "coverage": "nyc npm test",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "debug": "^2.3.3",
+    "fildes": "^1.0.5",
+    "nodegit": "^0.16.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "coveralls": "^2.11.15",
+    "fildes-extra": "^0.6.0",
+    "nyc": "^10.0.0"
+  }
+}
